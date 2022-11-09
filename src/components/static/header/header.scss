@@ -1,0 +1,14 @@
+.kwd-header{
+  background: #fff;
+  padding: 20px;
+
+  .content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-header-inner{
+      flex: auto;
+    }
+  }
+}

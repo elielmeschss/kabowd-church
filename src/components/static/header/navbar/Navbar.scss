@@ -1,0 +1,47 @@
+.kwd-inner-menu {
+  width: 50%;
+  .kwd-menu {
+
+    .kwd-list-menu {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: auto;
+      gap: 20px;
+
+      li{
+        list-style: none;
+        font-size: 21px;
+        // padding: 0 19px;
+        height: 29px;
+        color: #0E0E0E;
+
+        a{
+          text-decoration: none;
+          color: #0E0E0E;
+          font-weight: 500;
+        }
+      }
+
+      .active{
+
+        a{
+          color: #FFB83E;
+          transition: .5s;
+        }
+
+        ::after{
+          content: "";
+          height: 1px;
+          background: #FFB83E;
+          border: 1px solid;
+          display: block;
+          transition: .5s;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
