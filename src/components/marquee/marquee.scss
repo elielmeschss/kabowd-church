@@ -1,0 +1,46 @@
+.kwd-content-marquee {
+    text-align: center;
+    margin-top: 20px !important;
+
+    .kwd-marquee-top-title {
+        font-size: 13px;
+        color: #FFB83E;
+        font-weight: 600;
+        letter-spacing: 2.6px;
+    }
+
+    .kwd-marquee-title {
+        color: #181818;
+    }
+
+    .kwd-marquee-inner-title::after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: #FFB83E;
+        border: 1px solid #FFB83E;
+        margin: 26px auto;
+        display: block;
+        transition: .5s;
+        border-radius: 10px;
+    }
+
+    .kwd-marquee-inner-text{
+        padding: 0px 90px;
+
+        .kwd-marquee-context {
+            font-size: 14px;
+            font-weight: 300;
+            color: #8C8C8C;
+            letter-spacing: 0.84px;
+        }
+    
+        .kwd-marquee-vers {
+            font-weight: 600;
+            color: #181818;
+        }
+    }
+
+
+    
+}
