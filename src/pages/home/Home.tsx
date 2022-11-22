@@ -1,14 +1,14 @@
 import React from "react";
-import Marquee from '../../components/home/marquee/Marquee'
-import SliderLayout from "../../components/home/slider/Slider";
+import Marquee from './marquee/Marquee'
+import SliderLayout from "./slider/Slider";
+import Cards from "./cards/Cards"
 
 export default function Home() {
   return (
     <div className="kwd-content-home">
       <SliderLayout />
       <Marquee />
-      <h1>Olá Mundo!</h1>
-      <p>Home</p>
+      <Cards/>
     </div>
   )
 }

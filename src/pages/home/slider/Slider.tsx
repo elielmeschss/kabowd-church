@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Image from "../../resizing/Image"
+import Image from "./../../../components/resizing/Image"
 
 import mediasQueries from './mock/index'
 
