@@ -10,7 +10,7 @@ export default function SliderLayout() {
 
   return (
     <Carousel>
-      {
+      {// eslint-disable-next-line
         mediasQueries.filter((item) => {
           if (item.tag === 'mobile' && innerWidth) {
             return item.url

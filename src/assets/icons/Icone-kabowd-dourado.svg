@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="299.422" height="416.5" viewBox="0 0 299.422 416.5">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_24" data-name="Retângulo 24" width="299.422" height="416.5" fill="none" stroke="#ffb83e" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Icone_kabowd" data-name="Icone kabowd" transform="translate(6 9)" style="mix-blend-mode: normal;isolation: isolate">
+    <g id="Grupo_30" data-name="Grupo 30" transform="translate(-6 -9)" clip-path="url(#clip-path)">
+      <path id="Caminho_51" data-name="Caminho 51" d="M271.271,191.286a143.9,143.9,0,0,0-43.738-50.2l-2.5-1.783a29.618,29.618,0,1,0-34.121,48.4l.52.365A84.677,84.677,0,1,1,70.66,215.631l65.012-92.178.232-.325a101.953,101.953,0,0,0,7.171-102.96L132.826,0l-5.835,21.725c-5.646,21.019-28.32,53.653-29.241,54.987L27.766,173.193l-1.546,2.144A142.884,142.884,0,0,0,0,258.141c0,79.29,64.506,143.8,143.8,143.8s143.795-64.507,143.795-143.8a144.78,144.78,0,0,0-16.32-66.855" transform="translate(5.461 8.191)" fill="none" stroke="#ffb83e" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

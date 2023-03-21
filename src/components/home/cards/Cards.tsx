@@ -32,7 +32,7 @@ export default function Cards() {
   return (
 
     <div className="kwd-content-ministry">
-      {
+      {// eslint-disable-next-line
         mockCards.filter((item) => {
           if (item.tag === "mobile" && dataWidth) return item ;
            else if (item.tag === "desktop" && !dataWidth) return item;

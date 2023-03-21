@@ -1,0 +1,192 @@
+.devotional_container {
+    max-width: 1440px;
+    text-align: center;
+
+    margin: 3.75rem 0;
+
+    .devotional_inner_title {
+        span {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 0.8125rem;
+            color: #FFB83E;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2.6px;
+
+            display: inline-block;
+        }
+
+        h3 {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 1.625;
+            color: #181818;
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                height: 1px;
+                width: 96px;
+                border: 1px solid #FFB83E;
+                display: block;
+                margin: 1rem auto 1.625rem;
+            }
+        }
+    }
+
+    .devotional_inner_content {
+        .devotional_inner_box {
+            display: flex;
+            justify-content: space-between;
+
+            .devotional_box_item {
+                max-width: 278px;
+
+                img {
+                    max-width: 278px;
+                    max-height: 278px;
+                }
+
+                .box_title {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color: #181818;
+                    text-transform: uppercase;
+                    text-align: left;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                    margin-left: 8px;
+                }
+
+                .box_text {
+                    font-family: 'Poppins';
+                    font-weight: 300;
+                    font-size: 0.75rem;
+                    color: #8c8c8c;
+                    text-align: left;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+.banner_content_radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3.75rem 0;
+
+    .content_inner_radio {
+        flex: 1;
+
+
+        .logo_kwd {
+            margin-bottom: 4rem;
+
+            img {
+                max-width: 345px;
+                max-height: 86px;
+            }
+        }
+
+
+        .info_radio_banner {
+
+            .texts_radio_banner {
+                margin-bottom: 4rem;
+
+                .first_txt {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 3.75rem;
+                    text-transform: uppercase;
+                    color: #FFB83E;
+                    letter-spacing: -2.4px;
+
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+
+                .second_txt {
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 1.375rem;
+                    text-transform: uppercase;
+                    color: #181818;
+
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+
+                .third_txt {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 2.0625rem;
+                    text-transform: uppercase;
+                    letter-spacing: -0.66px;
+                    color: #181818;
+                }
+
+                .frd_text{
+                    font-family: 'Poppins';
+                    font-weight: 700;
+                    font-size: 2.25rem;
+                    text-transform: uppercase;
+                    color: #181818;
+
+                    display: inline-block;
+                    margin-top: -1.4rem;
+                }
+            }
+        }
+
+        .info_radio_button{
+            width: 235px;
+            height: 49px;
+            background: #FFB83E;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                .banner_button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 18px;
+                    height: 49px;
+
+                    span{
+                        font-family: 'Poppins';
+                        font-weight: 600;
+                        font-size: 1.4375rem;
+                        color: #fff;
+                    }
+
+                    &::after{
+                        content: "";
+                        display: block;
+                        -webkit-mask-image: url(../../../assets/icons/play-button.png);
+                        mask-image: url(../../../assets/icons/play-button.png);
+                        -webkit-mask-repeat: no-repeat;
+                        -webkit-mask-size: cover;
+                        background-color: #fff;
+                        width: 29px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    .content_inner_image{
+        flex: 1;
+
+        img{
+            width: 100%;
+        }
+    }
+}
