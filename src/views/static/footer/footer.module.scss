@@ -1,0 +1,47 @@
+.footer_kwd_comu{
+    padding: 2.375rem 0;
+
+    .footer_kwd{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-bottom: 50px;
+
+        border-bottom: 1px solid #cdcdcd;
+
+        .content_principal_institutional{
+            flex: 1;
+
+            img{
+                width: 100%;
+                max-width: 200px;
+            }
+
+            p{
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 0.75rem;
+                letter-spacing: 0.62px;
+                color: #464646;
+                margin-top: 20px;
+                margin-left: 8px;
+            }
+        }
+
+        .content_menu_institutional{
+            flex-grow: 1;
+
+            .institutional_menu_footer{
+                display: flex;
+                gap: 180px;
+                justify-content: center;
+
+                list-style: none;
+            }
+        }
+
+        .content_location_institutional{
+            flex: 1;
+        }
+    }
+}

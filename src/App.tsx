@@ -2,6 +2,7 @@ import React, {lazy} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Header from './views/static/header/Header';
+import Footer from './views/static/footer/Footer'
 const About = lazy(()=> import('./pages/About/About'))
 const Contact = lazy(()=> import('./pages/Contact/Contact'))
 const Events = lazy(()=> import('./pages/Events/Events'))
@@ -25,6 +26,7 @@ function App() {
 
         </Routes>
       </Router>
+      <Footer />
 
 
     </div>
