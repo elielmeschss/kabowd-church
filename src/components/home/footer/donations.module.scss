@@ -26,6 +26,10 @@
         right: 0;
         z-index: 999;
 
+        @media (max-width: 1460px){
+            margin: 1rem auto;
+        }
+
         .donations_title_banner{
             display: flex;
             align-items: center;

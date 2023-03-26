@@ -7,9 +7,6 @@ import devotionalsInner from './mock/index'
 
 const devotion = devotionalsInner
 
-console.log(devotion);
-
-
 export default function Devotionals() {
 
     return (

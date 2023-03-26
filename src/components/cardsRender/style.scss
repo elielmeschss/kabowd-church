@@ -1,3 +1,7 @@
 .kwd-content-cards{
   margin: 3.75rem 0;
+
+  @media (max-width: 768px){
+    margin: 2rem 0;
+  }
 }

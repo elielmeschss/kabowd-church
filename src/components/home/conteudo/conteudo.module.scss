@@ -15,14 +15,24 @@
             letter-spacing: 2.6px;
 
             display: inline-block;
+
+            @media (max-width:768px) {
+                margin-bottom: 0.75rem;
+                font-size: 0.625rem;
+                letter-spacing: 2px;
+            }
         }
 
         h3 {
             font-family: 'Poppins';
             font-weight: 600;
-            font-size: 1.625;
+            font-size: 1.625rem;
             color: #181818;
             text-transform: uppercase;
+
+            @media (max-width: 768px) {
+                font-size: 1.375rem;
+            }
 
             &::after {
                 content: '';
@@ -31,14 +41,25 @@
                 border: 1px solid #FFB83E;
                 display: block;
                 margin: 1rem auto 1.625rem;
+
+                @media (max-width:768px) {}
             }
         }
     }
 
     .devotional_inner_content {
+        @media (max-width:768px) {
+            overflow: hidden;
+            overflow-x: auto;
+        }
+
         .devotional_inner_box {
             display: flex;
             justify-content: space-between;
+
+            @media (max-width:768px){
+                gap: 10px;
+            }
 
             .devotional_box_item {
                 max-width: 278px;
@@ -80,6 +101,10 @@
 
     margin: 3.75rem 0;
 
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
+
     .content_inner_radio {
         flex: 1;
 
@@ -87,10 +112,33 @@
         .logo_kwd {
             margin-bottom: 4rem;
 
-            img {
+            @media (max-width: 768px){
+                text-align: center;
+            }
+
+            .logo_radio_image {
                 max-width: 345px;
                 max-height: 86px;
+
+                @media (max-width: 768px){
+                    width: 228px;
+                    height: 57px;
+                }
             }
+
+            .mobile_image_listen{
+                display: none;
+
+                @media (max-width: 768px){
+                    width: 326px;
+                    margin: 0 auto;
+                    display: block;
+
+                    max-width: 100%;
+                }
+            }
+
+           
         }
 
 
@@ -131,7 +179,7 @@
                     color: #181818;
                 }
 
-                .frd_text{
+                .frd_text {
                     font-family: 'Poppins';
                     font-weight: 700;
                     font-size: 2.25rem;
@@ -144,29 +192,30 @@
             }
         }
 
-        .info_radio_button{
+        .info_radio_button {
             width: 235px;
             height: 49px;
             background: #FFB83E;
             text-align: center;
 
-            a{
+            a {
                 text-decoration: none;
-                .banner_button{
+
+                .banner_button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 18px;
                     height: 49px;
 
-                    span{
+                    span {
                         font-family: 'Poppins';
                         font-weight: 600;
                         font-size: 1.4375rem;
                         color: #fff;
                     }
 
-                    &::after{
+                    &::after {
                         content: "";
                         display: block;
                         -webkit-mask-image: url(../../../assets/icons/play-button.png);
@@ -182,10 +231,14 @@
         }
     }
 
-    .content_inner_image{
+    .content_inner_image {
         flex: 1;
 
-        img{
+        @media (max-width: 768px){
+            display: none;
+        }
+
+        img {
             width: 100%;
         }
     }

@@ -1,7 +1,7 @@
-.footer_kwd_comu{
-    padding: 2.375rem 0;
+.footer_kwd_comu {
+    padding: 2.375rem 0 0;
 
-    .footer_kwd{
+    .footer_kwd {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -9,15 +9,15 @@
 
         border-bottom: 1px solid #cdcdcd;
 
-        .content_principal_institutional{
+        .content_principal_institutional {
             flex: 1;
 
-            img{
+            img {
                 width: 100%;
                 max-width: 200px;
             }
 
-            p{
+            p {
                 font-family: 'Poppins';
                 font-weight: 400;
                 font-size: 0.75rem;
@@ -28,20 +28,123 @@
             }
         }
 
-        .content_menu_institutional{
+        .content_menu_institutional {
             flex-grow: 1;
 
-            .institutional_menu_footer{
+            .institutional_menu_footer {
                 display: flex;
                 gap: 180px;
                 justify-content: center;
+                margin: 0;
 
                 list-style: none;
+
+                li {
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    margin-top: 20px;
+
+                    &::before {
+                        content: ">";
+                        color: #FFB93F;
+                        margin-right: 8px;
+                    }
+
+                    a {
+                        color: #464646;
+                        text-decoration: unset;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: #FFB93F;
+                            transition: all .3;
+                        }
+                    }
+
+                }
             }
         }
 
-        .content_location_institutional{
+        .content_location_institutional {
             flex: 1;
+
+            .location_content_kwd {
+                display: flex;
+                gap: 16px;
+
+                &::before {
+                    content: url(../../../assets/icons/icon-location.svg);
+                    display: block;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    color: #464646;
+
+                    span {
+                        font-size: 0.6875rem;
+                        color: #9b9b9b;
+                        margin-left: 30px;
+                    }
+                }
+            }
+
+            .telephone_content_kwd {
+                display: flex;
+                gap: 16px;
+
+                &::before {
+                    content: url(../../../assets/icons/icon-tel.svg);
+                    display: block;
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    color: #464646;
+                }
+            }
+        }
+    }
+
+
+}
+
+.footer_copy_content {
+    background: #383838;
+
+    .copy_txt {
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+    }
+
+    .development_footer {
+        &::before {
+            content: "Powered by";
+            display: block;
+            font-size: .65rem;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .powered_images {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            img {
+                max-width: 100%;
+                height: 40px;
+            }
+
+            .mesch_company{
+                height: 30px;
+            }
         }
     }
 }

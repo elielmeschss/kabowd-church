@@ -11,9 +11,15 @@ const Radio = lazy(()=> import('./pages/Radio/Radio'))
 const Login = lazy(()=> import('./views/login/Login'));
 
 function App() {
+
+  const isMobile = window.innerWidth > 768
+
   return (
     <div className="Main-kwd">
-      <Header/>
+      {
+        isMobile ? <Header /> : <></>
+      }
+
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -26,7 +32,11 @@ function App() {
 
         </Routes>
       </Router>
-      <Footer />
+
+
+      {
+        isMobile ? <Footer /> : <></>
+      }
 
 
     </div>

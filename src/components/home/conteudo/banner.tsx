@@ -15,7 +15,8 @@ export default function BannerRadio() {
                 <div className={styles.banner_content_radio}>
                     <div className={styles.content_inner_radio}>
                         <div className={styles.logo_kwd}>
-                            <img src={logoRadio} alt="" />
+                            <img className={styles.logo_radio_image} src={logoRadio} alt="" />
+                            <img className={styles.mobile_image_listen} src={listenRadio} alt="" />
                         </div>
                         <div className={styles.info_radio_banner}>
                             <p className={styles.texts_radio_banner}>

@@ -3,9 +3,18 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: 768px){
+        flex-direction: column-reverse;
+      }
+
       .inner-card-info {
           width: 50%;
           padding: 0 6rem;
+
+        @media (max-width:768px){
+            width: 100%;
+            padding: 1.5rem 1.875rem;
+        }
 
           .card-inner-title {
               max-inline-size: 14rem;
@@ -19,6 +28,11 @@
               font-weight: 300;
               letter-spacing: 0.84px;
               color: #8C8C8C;
+
+              @media (max-width: 768px){
+                font-size: 0.75rem;
+                letter-spacing: 0.78px;
+              }
           }
       }
       .inner-card-info::before {
@@ -41,6 +55,10 @@
 
       .bg-cards-inner {
           width: 50%;
+
+          @media (max-width:768px){
+            width: 100%;
+          }
 
           img {
               width: 100%;
