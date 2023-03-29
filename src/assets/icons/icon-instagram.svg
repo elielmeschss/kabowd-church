@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Icone_instagram" data-name="Icone instagram" transform="translate(-0.207)">
+    <circle id="Elipse_3" data-name="Elipse 3" cx="22.5" cy="22.5" r="22.5" transform="translate(0.207 0)" fill="#464646"/>
+    <g id="Icon_ionic-logo-instagram" data-name="Icon ionic-logo-instagram" transform="translate(12.661 12.227)">
+      <path id="Caminho_37" data-name="Caminho 37" d="M18.811,6.184a4.221,4.221,0,0,1,4.209,4.209v8.418a4.221,4.221,0,0,1-4.209,4.209H10.393a4.221,4.221,0,0,1-4.209-4.209V10.393a4.221,4.221,0,0,1,4.209-4.209h8.418m0-1.684H10.393A5.91,5.91,0,0,0,4.5,10.393v8.418A5.91,5.91,0,0,0,10.393,24.7h8.418A5.91,5.91,0,0,0,24.7,18.811V10.393A5.91,5.91,0,0,0,18.811,4.5Z" transform="translate(-4.5 -4.5)" fill="#fff"/>
+      <path id="Caminho_38" data-name="Caminho 38" d="M24.888,11.525a1.263,1.263,0,1,1,1.263-1.263A1.26,1.26,0,0,1,24.888,11.525Z" transform="translate(-9.314 -5.633)" fill="#fff"/>
+      <path id="Caminho_39" data-name="Caminho 39" d="M16.3,12.934A3.367,3.367,0,1,1,12.934,16.3,3.37,3.37,0,0,1,16.3,12.934m0-1.684A5.051,5.051,0,1,0,21.352,16.3,5.052,5.052,0,0,0,16.3,11.25Z" transform="translate(-6.199 -6.199)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

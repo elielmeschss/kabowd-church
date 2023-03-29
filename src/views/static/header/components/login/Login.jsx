@@ -1,5 +1,5 @@
 import React from "react";
-import iconlog from './../../../../assets/icons/login-icon.svg'
+import iconlog from './../../../../../assets/icons/login-icon.svg'
 
 import "./login.scss"
 

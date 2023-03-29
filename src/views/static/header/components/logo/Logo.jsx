@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../../../../assets/images/logo-horizontal.png"
+import logo from "./../../../../../assets/images/logo-horizontal.png"
 import "./logo.scss"
 
 export default function Logo(){

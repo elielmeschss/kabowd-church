@@ -1,14 +1,14 @@
-import React, {lazy} from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Header from './views/static/header/Header';
 import Footer from './views/static/footer/Footer'
-const About = lazy(()=> import('./pages/About/About'))
-const Contact = lazy(()=> import('./pages/Contact/Contact'))
-const Events = lazy(()=> import('./pages/Events/Events'))
-const Home = lazy(()=> import('./pages/home/Home'))
-const Radio = lazy(()=> import('./pages/Radio/Radio'))
-const Login = lazy(()=> import('./views/login/Login'));
+const About = lazy(() => import('./pages/About/About'))
+const Contact = lazy(() => import('./pages/Contact/Contact'))
+const Events = lazy(() => import('./pages/Events/Events'))
+const Home = lazy(() => import('./pages/home/Home'))
+const Radio = lazy(() => import('./pages/Radio/Radio'))
+const Login = lazy(() => import('./views/login/Login'));
 
 function App() {
 
@@ -33,12 +33,7 @@ function App() {
         </Routes>
       </Router>
 
-
-      {
-        isMobile ? <Footer /> : <></>
-      }
-
-
+      <Footer />
     </div>
   );
 }

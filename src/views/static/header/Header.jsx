@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "./logo/Logo"
-import Navbar from "./navbar/Navbar";
-import Login from "./login/Login"
+import Logo from "./components/logo/Logo"
+import Navbar from "./components/navbar/Navbar";
+import Login from "./components/login/Login"
 
 import "./header.scss"
 
