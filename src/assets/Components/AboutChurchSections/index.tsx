@@ -1,5 +1,4 @@
-import { SubTitle } from "../../../Pages/Home/styles"
-import { AboutText, BodyText, GroupImages, SectionContainer, Title } from "./styles"
+import { AboutText, BodyText, GroupImages, ImageContainer, SectionContainer, SubTitleAbout, Title } from "./styles"
 
 interface IAboutSection{
   title: string,
@@ -11,15 +10,15 @@ export function AboutChurchSections({title, body, image}: IAboutSection){
   return(
       <SectionContainer>
         <AboutText className="aboutText">
-          <SubTitle>GRUPO</SubTitle>
+          <SubTitleAbout>GRUPO</SubTitleAbout>
           <Title>{title}</Title>
           <BodyText>
             {body}
           </BodyText>
         </AboutText>
-        <div>
+        <ImageContainer>
           <GroupImages className="imagesAboutGroups" src={image} alt="" />
-        </div>
+        </ImageContainer>
       </SectionContainer>
   )
 }

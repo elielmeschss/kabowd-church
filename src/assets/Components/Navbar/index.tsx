@@ -4,7 +4,7 @@ import { LoginArea, LoginButton, NavBrand, NavContainer, NavItems, NavLinkAnchor
 import {UserCircle} from "phosphor-react"
 export function Navbar(){
   return (
-    <NavContainer>
+    <NavContainer className="py-3">
     <Nav as="ul">
       <Nav.Item as="li">
         <Nav.Link href="/">

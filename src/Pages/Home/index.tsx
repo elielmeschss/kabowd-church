@@ -9,6 +9,9 @@ import {
 } from "./styles";
 import { AboutChurchSections } from "../../assets/Components/AboutChurchSections";
 import lion from "../../assets/images/kabowd-teen-desktop.png";
+import womanPraying from "../../assets/images/Mulheres-Valor-desktop.png";
+import honorableMan from "../../assets/images/Homens-honra-desktop.png";
+import happyKids from "../../assets/images/Kabowd-Kids-desktop.png";
 
 const mockCard = [
   {
@@ -16,6 +19,24 @@ const mockCard = [
     image: lion,
     title: "MOVING KINGDOM",
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+  },
+  {
+    id: Math.random().toString(),
+    image: womanPraying,
+    title: "MULHERES DE VALOR",
+    body: "O nome surgiu em uma resposta de Deus a um pedido de um nome da Pastora Presidente para reunir as mulheres da Comunidade Kabowd. Perguntei ao Senhor porque Mulheres de Valor e sua resposta foi: Porque este grupo ajudará outras mulheres, mulheres desesperadas, mulheres depressivas, mulheres desvalorizadas, mulheres rejeitas, mulheres que não mais acreditam no seu potencial. Também irá ensinar mulheres a resgatar os valores perdidos dentro de casa, honra, respeito, gratidão, paternidade, maternidade e filiação.",
+  },
+  {
+    id: Math.random().toString(),
+    image: honorableMan,
+    title: "HOMENS DE HONRA",
+    body: "Um grupo firmado na palavra, compromissado com a verdade estabelecendo os propósitos de Deus para a vida do homem com intuito de arregimentar homens de honra, com princípios de Deus para o avanço do Reino. Procuramos aqui resgatar a dignidade do homem que foi perdida através dos anos juntos a sua paternidade colocando de volta ao encontro do pai. aquele que dá intimidade, provisão e destino.",
+  },
+  {
+    id: Math.random().toString(),
+    image: happyKids,
+    title: "KABOWD KIDS",
+    body: "Acreditamos que antes mesmo de vir ao mundo a criança nasceu no coração de Deus. E o propósito do Ministério kabowd Klds é direciona-las ao único caminho mostrando que elas fazem parte do Reino tanto quanto um adulto. Não há idade para começar aquilo que desde o princípio já foi determinado do coração de uma criança é extraída a verdadeira adoração. Toda contrução é necessário um fundamento sólido bem alicerçado, nossas crianças aprendem a construir sua vida no alicerse inabalável.",
   },
 ];
 
