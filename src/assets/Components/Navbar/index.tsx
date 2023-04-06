@@ -1,10 +1,10 @@
 import { Nav, Container } from "react-bootstrap"
 import logo from "../../images/logo-horizontal.png"
-import { LoginArea, LoginButton, NavBrand, NavContainer, NavItems, NavLinkAnchorTag } from "./styles"
+import { LoginArea, LoginButton, NavBrand, NavItems, NavLinkAnchorTag } from "./styles"
 import {UserCircle} from "phosphor-react"
 export function Navbar(){
   return (
-    <NavContainer className="py-3">
+    <Container className="py-2">
     <Nav as="ul">
       <Nav.Item as="li">
         <Nav.Link href="/">
@@ -39,7 +39,7 @@ export function Navbar(){
       </LoginArea>
       
     </Nav>
-    </NavContainer>
+    </Container>
     
 
   )
