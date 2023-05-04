@@ -1,0 +1,24 @@
+.mainAbout {
+
+  .AboutContentMain {
+    background: #F9F9F9;
+
+    .aboutBoxText {
+      padding: 7rem 0;
+
+      p:nth-child(4){
+        color: black;
+      }
+    }
+  }
+
+  .churchContentMain{
+    .churchBoxText{
+      padding: 6rem  0;
+
+      p:nth-child(6){
+        color: black;
+      }
+    }
+  }
+}

@@ -1,7 +1,51 @@
-.kwd-content-cards{
+.kwd-content-cards {
   margin: 3.75rem 0;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     margin: 2rem 0;
   }
+}
+
+
+.cardtip-main-tip {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cardtip-box-description {
+    padding-right: 5rem;
+    width: 450px;
+
+    .cardtip-emph-txt {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 1rem;
+      color: #FFB83E;
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+    }
+
+    .cardtip-title {
+      font-family: 'Poppins';
+      color: #181818;
+      margin-bottom: 1.25rem;
+    }
+
+    .cardtip-emph-description {
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 0.9375rem;
+      color: #8C8C8C;
+    }
+
+    .cardtip-emph-signature {
+      font-family: 'Pacifico';
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: #181818;
+    }
+
+  }
+
 }
