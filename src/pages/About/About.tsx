@@ -5,6 +5,8 @@ import CardsTip from "../../components/cardsRender/CardTip";
 
 const boutImg = require('../../assets/images/about/quem-somos-desktop.png')
 const pastorsAbout = require('../../assets/images/about/pastores-about-desktop.png')
+const missionAbout = require('../../assets/images/about/nossa-missao-desktop.png')
+const missionAboutMobi = require('../../assets/images/about/nossa-missao-mobile.png')
 
 
 export default function About() {
@@ -33,7 +35,7 @@ export default function About() {
         <Container>
           <Row>
             <div className={styles.churchBoxText}>
-            <CardsTip
+              <CardsTip
                 minimal="A igreja"
                 title="Quem Somos"
                 texta={`Sergio Roni Dias Barros é casado com Leila Andréia Mesch Ferreira Barros compondo uma família Sacerdotal com 2 filhos e 1 neta. Natural de Santa Maria - RS, vive hoje em Gaspar - SC aonde Fundou a Comunidade Kabowd. Nascido em berço cristão recebeu seu chamado ministerial aos 14 anos, porém vendo a sobrecarga do ministério, as dificuldades e provações de amigos que exerciam o pastoreio acabou rejeitando seu chamado.`}
@@ -46,6 +48,29 @@ export default function About() {
             </div>
           </Row>
         </Container>
+      </div>
+
+      <div className={styles.aboutMission}>
+        <div className={styles.bannerMission}>
+          { window.innerWidth < 1000 ?
+            <img src={missionAboutMobi} alt="Nossa Missão" />
+            :
+            <img src={missionAbout} alt="Nossa Missão" />
+          }
+        </div>
+        <div className={styles.aboutMissionContent}>
+          <h1 className={styles.titleMissionContent}>Nossa Missão</h1>
+          <p className={styles.descriptionMissionContent}>
+            Nossa Missão é propagar o Reino de Deus e seu evangelho a todos os cantos, homens, mulheres, jovens, crianças, adolescentes e idosos.
+            Somos um lugar para todos, aonde o foco é louvar e adorar aquele que vive e reina.
+            <span>
+              <br />
+              <br />
+            </span>
+            Como igreja nosso dever é desenvolver e restituir a paternidade de Deus, o contato com o criador, somos uma comunidade sem fronteiras que busca reconectaras pessoas ao pai, crendo de que o Reino de Deus se movimenta para todos os lados, em qualquer cidades, estados, povos, línguas e nações.
+            Não há barreira nem empecilho para pregar o evangelho.
+          </p>
+        </div>
       </div>
     </section>
   )

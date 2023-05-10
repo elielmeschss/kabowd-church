@@ -13,9 +13,20 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+
+    padding: 0 1.5rem;
+  }
+
   .cardtip-box-description {
     padding-right: 5rem;
     width: 450px;
+
+    @media (max-width: 1000px) {
+      padding-right: 0;
+      width: 100%;
+    }
 
     .cardtip-emph-txt {
       font-family: 'Poppins';
@@ -47,5 +58,27 @@
     }
 
   }
+
+  .cardtip-box-images{
+    img{
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .desktop-devices{
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .mobile-devices{
+    display: none;
+    @media (max-width: 1000px) {
+      display: block;
+      margin-bottom: 2.5rem;
+    }
+  }
+
 
 }

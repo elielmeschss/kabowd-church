@@ -28,6 +28,11 @@ export default function CardsTip({
       <div className="cardtip-box-description">
         <span className="cardtip-emph-txt">{minimal}</span>
         <h1 className="cardtip-title">{title}</h1>
+
+        <div className="cardtip-box-images mobile-devices">
+          <img src={url} alt={minimal} />
+        </div>
+
         <p className="cardtip-emph-description description-a">{texta}</p>
         <p className="cardtip-emph-description description-b">{textb}</p>
         <p className="cardtip-emph-description description-c">{textc}</p>
@@ -35,7 +40,7 @@ export default function CardsTip({
         <strong className="cardtip-emph-signature">{ass}</strong>
       </div>
 
-      <div className="cardtip-box-images">
+      <div className="cardtip-box-images desktop-devices">
         <img src={url} alt={minimal} />
       </div>
     </div>
