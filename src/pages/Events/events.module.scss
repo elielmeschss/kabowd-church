@@ -1,0 +1,31 @@
+.eventsHeaderSection {
+  background: #F9F9F9;
+  padding: 1.5rem;
+
+  .contentHeaderTxt {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+    .contentSpanTxt {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 0.875rem;
+      letter-spacing: 2.8px;
+      color: #FFB83E;
+      text-transform: uppercase;
+    }
+
+    .contentTitleHeader {
+      font-family: 'Poppins';
+      font-weight: 600;
+      color: #181818;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mainCardsEvents{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
