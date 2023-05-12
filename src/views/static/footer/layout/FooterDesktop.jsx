@@ -66,7 +66,9 @@ export default function FooterDesktop() {
                             </div>
                         </div>
 
-
+                        <div className={styled.copy_txt}>
+                            <span>@2021 - Todos os direitos reservados Kabowd</span>
+                        </div>
                     </div>
                 </Row>
             </Container>
@@ -74,9 +76,7 @@ export default function FooterDesktop() {
             <div className={styled.footer_copy_content}>
                 <Container>
                     <Row>
-                        <div className={styled.copy_txt}>
-                            <span>@2021 - Todos os direitos reservados Kabowd</span>
-                        </div>
+                       
                         <div className={styled.development_footer}>
                             <div className={styled.powered_images}>
                                 <a href="https://agenciamonnarka.com.br/" target={`__blank`}>

@@ -3,8 +3,7 @@ import React from "react";
 export default function Radio(){
   return(
     <div>
-      <h1>Olá Mundo!</h1>
-      <p>Rádio</p>
+      <iframe src="https://player.hdradios.net/player-web/7540" frameborder="0" width="100%" height="600"></iframe>
     </div>
   )
 }

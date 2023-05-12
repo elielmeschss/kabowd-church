@@ -1,10 +1,10 @@
-.content_container_footer_styled{
+.content_container_footer_styled {
     background: #FAFAFA;
 }
 
 .footer_kwd_comu {
     padding: 2.375rem 0 0;
-    
+
     .footer_kwd {
         display: flex;
         flex-wrap: nowrap;
@@ -115,18 +115,18 @@
         }
     }
 
-    .footer_kwd_mob{
+    .footer_kwd_mob {
         border-bottom: 1px solid #cdcdcd;
 
-        .content_principal_institutional_mob{
+        .content_principal_institutional_mob {
             text-align: center;
 
-            img{
+            img {
                 width: 100%;
                 max-width: 250px;
             }
 
-            p{
+            p {
                 font-family: 'Poppins';
                 font-weight: 400;
                 font-size: 0.75rem;
@@ -138,7 +138,7 @@
             }
         }
 
-        .content_menu_institutional_mob{
+        .content_menu_institutional_mob {
 
             .institutional_menu_footer_mob {
                 display: flex;
@@ -176,7 +176,7 @@
             }
         }
 
-        .content_location_institutional_mob{
+        .content_location_institutional_mob {
             .location_content_kwd_mob {
                 display: flex;
                 gap: 16px;
@@ -219,31 +219,31 @@
             }
         }
     }
+
+    .copy_txt {
+        text-align: center;
+        padding: 20px 0;
+        color: #464646;
+    }
 }
 
-.institutional_medias{
+.institutional_medias {
     display: flex;
     gap: 16px;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         justify-content: center;
         margin: 28px 0;
     }
 
-    img{
+    img {
         width: 45px;
         height: 45px;
     }
 }
 
 .footer_copy_content {
-    background: #383838;
-
-    .copy_txt {
-        text-align: center;
-        padding: 20px 0;
-        color: #fff;
-    }
+    // background: #383838;
 
     .development_footer {
         &::before {
@@ -251,9 +251,9 @@
             display: block;
             font-size: .65rem;
             text-decoration: none;
-            color: #ffffff;
+            color: #464646;
 
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 margin-bottom: 20px;
             }
         }
@@ -264,13 +264,14 @@
             justify-content: space-around;
 
             margin-bottom: 20px;
-            
+
             img {
                 max-width: 100%;
                 height: 40px;
+                filter: contrast(0.7);
             }
 
-            .mesch_company{
+            .mesch_company {
                 height: 30px;
             }
         }

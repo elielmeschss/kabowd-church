@@ -1,5 +1,6 @@
 .kwd-inner-menu {
   width: 50%;
+
   .kwd-menu {
 
     .kwd-list-menu {
@@ -12,28 +13,32 @@
       gap: 20px;
       margin: 0;
 
-      li{
+      li {
         list-style: none;
         font-size: 21px;
         // padding: 0 19px;
         height: 29px;
         color: #0E0E0E;
 
-        a{
+        a {
           text-decoration: none;
           color: #0E0E0E;
           font-weight: 500;
+
+          &:hover {
+            color: #FFB83E;
+            transition: .2s;
+          }
         }
       }
 
-      .active{
+      .active {
 
-        a{
+        a {
           color: #FFB83E;
-          transition: .5s;
         }
 
-        ::after{
+        ::after {
           content: "";
           height: 1px;
           background: #FFB83E;
