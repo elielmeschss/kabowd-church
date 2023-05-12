@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row } from 'react-bootstrap'
+import CardEvent from "../../components/cardsRender/CardEvents";
 
 
 import styles from './events.module.scss'
-import CardEvent from "../../components/cardsRender/CardEvents";
 
 export default function Events() {
   return (
@@ -20,6 +20,39 @@ export default function Events() {
           <div className={styles.mainCardsEvents}>
             <CardEvent
               title="Escola de Ester"
+              text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
+              img="https://placehold.co/600x400/EEE/31343C"
+              link="#"
+              day="25"
+              month="AGO"
+              face="#"
+              insta="#"
+            />
+
+            <CardEvent
+              title="Escola de Sacerdotes"
+              text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
+              img="https://placehold.co/600x400/EEE/31343C"
+              link="#"
+              day="25"
+              month="AGO"
+              face="#"
+              insta="#"
+            />
+
+            <CardEvent
+              title="Retiro de Jovens"
+              text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
+              img="https://placehold.co/600x400/EEE/31343C"
+              link="#"
+              day="25"
+              month="AGO"
+              face="#"
+              insta="#"
+            />
+
+            <CardEvent
+              title="Praise Conference"
               text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
               img="https://placehold.co/600x400/EEE/31343C"
               link="#"

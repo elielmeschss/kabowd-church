@@ -18,13 +18,13 @@ interface EventsProps {
 
 export default function CardEvent({ ...props }: EventsProps) {
   return (
-    <div>
-      <div>
-        <div>
-          <p>{props.day}</p>
-          <p>{props.month}</p>
+    <div className="mainCardsEvents">
+      <div className="cardEventContextInfo">
+        <div className="cardInfoDate">
+          <p className="cardInfoDateDay">{props.day}</p>
+          <p className="cardInfoDateMonth">{props.month}</p>
         </div>
-        <div>
+        <div className="cardInfoMedias">
           <a href={props.face}><FontAwesomeIcon icon={['fab', 'facebook']} style={{color: "#4a4a4a",}} /></a>
           <a href={props.insta}><FontAwesomeIcon icon={['fab', 'instagram']} style={{color: "#4a4a4a",}} /></a>
         </div>
@@ -32,11 +32,12 @@ export default function CardEvent({ ...props }: EventsProps) {
       <Card>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
+          <span>Inscrições Abertas</span>
         </Card.Body>
         <Card.Img variant="bottom" src={props.img} />
         <Card.Body>
           <Card.Text>{props.text}</Card.Text>
-          <Card.Link href={props.link}>Card Link</Card.Link>
+          <Card.Link href={props.link}>Inscrever-se</Card.Link>
         </Card.Body>
       </Card>
     </div>

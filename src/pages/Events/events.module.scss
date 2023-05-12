@@ -2,6 +2,10 @@
   background: #F9F9F9;
   padding: 1.5rem;
 
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
   .contentHeaderTxt {
     width: fit-content;
     margin: auto;
@@ -14,6 +18,10 @@
       letter-spacing: 2.8px;
       color: #FFB83E;
       text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 0.625rem;
+      }
     }
 
     .contentTitleHeader {
@@ -21,6 +29,10 @@
       font-weight: 600;
       color: #181818;
       text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 1.125rem;
+      }
     }
   }
 }
@@ -28,4 +40,11 @@
 .mainCardsEvents{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+
+  margin: 3.5rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
