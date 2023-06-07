@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row } from 'react-bootstrap'
 import CardEvent from "../../components/cardsRender/CardEvents";
 
+import eventsLink from "./mock";
+
 
 import styles from './events.module.scss'
 
@@ -21,7 +23,7 @@ export default function Events() {
             <CardEvent
               title="Escola de Ester"
               text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
-              img="https://placehold.co/600x400/EEE/31343C"
+              img={eventsLink.ester}
               link="#"
               day="25"
               month="AGO"
@@ -32,7 +34,7 @@ export default function Events() {
             <CardEvent
               title="Escola de Sacerdotes"
               text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
-              img="https://placehold.co/600x400/EEE/31343C"
+              img={eventsLink.sacerdotes}
               link="#"
               day="25"
               month="AGO"
@@ -43,7 +45,7 @@ export default function Events() {
             <CardEvent
               title="Retiro de Jovens"
               text="A escola de ester veio com a inteção de moldar o carater da mulher, renovando, exortando, trazendo luz, para quebrar cadeias e grilhões, para libertar."
-              img="https://placehold.co/600x400/EEE/31343C"
+              img={eventsLink.retiro}
               link="#"
               day="25"
               month="AGO"

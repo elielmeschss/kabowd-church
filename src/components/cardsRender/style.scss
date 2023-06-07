@@ -179,6 +179,12 @@
         margin-bottom: 1rem;
       }
     }
+
+    .card-img-bottom{
+      max-height: 345px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
   }
 
 }

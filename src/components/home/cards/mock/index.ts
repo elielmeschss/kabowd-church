@@ -1,9 +1,9 @@
 const mockCards = [
   {
     tag: "desktop",
-    title: "Kabowd Teen",
+    title: "Moving Kingdom",
     position: "row",
-    body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    body: "Moving Kingdom tem como seu maior proposito ser um grupo de jovens em prol do reino, intensificando a busca e a unidade. Sempre focado em implantar o reino de Deus na terra, para que tenhamos uma geração cheia do Espirito Santo e pronta para enfrentar as dificuldade que hoje todo jovem enfrenta. Como seu nome já diz, Reino em Movimento, somos o corpo de Cristo se movendo aonde quer que estejamos.",
     url: "https://i.imgur.com/kK8z5Zo.png"
   }, {
     tag: "desktop",
@@ -27,9 +27,9 @@ const mockCards = [
 
   {
     tag: "mobile",
-    title: "Kabowd Teen",
+    title: "Moving Kingdom",
     position: "collumn",
-    body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    body: "Moving Kingdom tem como seu maior proposito ser um grupo de jovens em prol do reino, intensificando a busca e a unidade. Sempre focado em implantar o reino de Deus na terra, para que tenhamos uma geração cheia do Espirito Santo e pronta para enfrentar as dificuldade que hoje todo jovem enfrenta. Como seu nome já diz, Reino em Movimento, somos o corpo de Cristo se movendo aonde quer que estejamos.",
     url: "https://i.imgur.com/iv5OJAR.png"
   }, {
     tag: "mobile",
