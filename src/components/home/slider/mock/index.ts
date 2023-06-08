@@ -6,7 +6,7 @@ const mediasQueries = [
     class: "image-item-desktop"
   },
   {
-    url: "https://i.imgur.com/u0fOp8X.png",
+    url: "https://i.imgur.com/ejl9Cwc.png",
     name: "Culto Família",
     tag: "mobile",
     class: "image-item-mobile"

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Botao_Menu_-_Mobile" data-name="Botao Menu - Mobile" transform="translate(-354)">
+    <rect id="Retângulo_43" data-name="Retângulo 43" width="60" height="60" transform="translate(354)" fill="#ff6f27"/>
+    <path id="Icon_awesome-bars" data-name="Icon awesome-bars" d="M1.125,9.281h29.25A1.125,1.125,0,0,0,31.5,8.156V5.344a1.125,1.125,0,0,0-1.125-1.125H1.125A1.125,1.125,0,0,0,0,5.344V8.156A1.125,1.125,0,0,0,1.125,9.281Zm0,11.25h29.25A1.125,1.125,0,0,0,31.5,19.406V16.594a1.125,1.125,0,0,0-1.125-1.125H1.125A1.125,1.125,0,0,0,0,16.594v2.813A1.125,1.125,0,0,0,1.125,20.531Zm0,11.25h29.25A1.125,1.125,0,0,0,31.5,30.656V27.844a1.125,1.125,0,0,0-1.125-1.125H1.125A1.125,1.125,0,0,0,0,27.844v2.813A1.125,1.125,0,0,0,1.125,31.781Z" transform="translate(369.15 12)" fill="#fff"/>
+  </g>
+</svg>

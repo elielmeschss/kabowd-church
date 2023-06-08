@@ -12,13 +12,10 @@ const Login = lazy(() => import('./views/login/Login'));
 
 function App() {
 
-  const isMobile = window.innerWidth > 768
 
   return (
     <div className="Main-kwd">
-      {
-        isMobile ? <Header /> : <></>
-      }
+      <Header />
 
       <Router>
         <Routes>

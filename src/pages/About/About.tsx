@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row } from 'react-bootstrap'
 import styles from './about.module.scss'
 import CardsTip from "../../components/cardsRender/CardTip";
+import ScrollTo from "../../components/ScrollTo/ScrollTo";
 
 const boutImg = require('../../assets/images/about/quem-somos-desktop.png')
 const pastorsAbout = require('../../assets/images/about/pastores-about-desktop.png')
@@ -72,6 +73,8 @@ export default function About() {
           </p>
         </div>
       </div>
+
+      <ScrollTo />
     </section>
   )
 }

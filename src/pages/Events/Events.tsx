@@ -6,6 +6,7 @@ import eventsLink from "./mock";
 
 
 import styles from './events.module.scss'
+import ScrollTo from "../../components/ScrollTo/ScrollTo";
 
 export default function Events() {
   return (
@@ -67,7 +68,7 @@ export default function Events() {
         </Row>
       </Container>
 
-
+      <ScrollTo />
     </section>
   )
 }
