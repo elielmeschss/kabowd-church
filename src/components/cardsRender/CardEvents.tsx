@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Card } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 
 import './style.scss'
 
@@ -9,14 +7,21 @@ interface EventsProps {
   title: string;
   text: string;
   img: string;
-  link: string;
   day: any;
   month: any;
-  face: string;
-  insta: string;
+  active: boolean;
+  messageAlert: string
 }
 
 export default function CardEvent({ ...props }: EventsProps) {
+  const [available, setIsAvailable] = useState(true)
+
+  useEffect(()=>{
+    if (props.active !== true ) {
+      setIsAvailable(false)
+    }
+  }, [props.active])
+
   return (
     <div className="mainCardsEvents">
       <div className="cardEventContextInfo">
@@ -25,21 +30,29 @@ export default function CardEvent({ ...props }: EventsProps) {
           <p className="cardInfoDateMonth">{props.month}</p>
         </div>
         <div className="cardInfoMedias">
-          <a href={props.face}><FontAwesomeIcon icon={['fab', 'facebook']} style={{color: "#4a4a4a",}} /></a>
-          <a href={props.insta}><FontAwesomeIcon icon={['fab', 'instagram']} style={{color: "#4a4a4a",}} /></a>
+          <a className="facebook-fab" href="https://www.facebook.com/kabowdcomunidade">
+
+          </a>
+          <a className="instagram-in" href="https://www.instagram.com/kabowdcomunidade/">
+
+          </a>
         </div>
       </div>
       <Card>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
-          <span>Inscrições Abertas</span>
+          <span className={available ? 'flickerRegister' : ' ' }>Inscrições Abertas</span>
         </Card.Body>
         <Card.Img variant="bottom" src={props.img} />
         <Card.Body>
           <Card.Text>{props.text}</Card.Text>
-          <Card.Link href={props.link}>Inscrever-se</Card.Link>
+          <Card.Link href="https://api.whatsapp.com/send?phone=5547997735125&text=Ol%C3%A1,%20Gostaria%20de%20informa%C3%A7%C3%B5es">Inscrever-se</Card.Link>
         </Card.Body>
       </Card>
+
+      {!available &&
+        <div className="BackdropUnavailable">...{props.messageAlert}</div>
+      }
     </div>
   )
 }

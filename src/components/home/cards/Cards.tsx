@@ -31,15 +31,20 @@ export default function Cards() {
   const dataWidth = window.innerWidth < 1000
   return (
 
-    <div className="kwd-content-ministry">
-      {// eslint-disable-next-line
-        mockCards.filter((item) => {
-          if (item.tag === "mobile" && dataWidth) return item ;
-           else if (item.tag === "desktop" && !dataWidth) return item;
-        }).map((newItem, i) => (
-          <ImgMock key={i} title={newItem.title} text={newItem.body} position={newItem.position} styleBg={newItem.url} />
-        ))
-      }
+
+    <div className="kwd-content-cards">
+      <div className="kwd-content-ministries">
+        <div className="kwd-content-ministry">
+          {// eslint-disable-next-line
+            mockCards.filter((item) => {
+              if (item.tag === "mobile" && dataWidth) return item;
+              else if (item.tag === "desktop" && !dataWidth) return item;
+            }).map((newItem, i) => (
+              <ImgMock key={i} title={newItem.title} text={newItem.body} position={newItem.position} styleBg={newItem.url} />
+            ))
+          }
+        </div>
+      </div>
     </div>
 
   )

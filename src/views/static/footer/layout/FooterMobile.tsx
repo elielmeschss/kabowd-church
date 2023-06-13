@@ -82,7 +82,7 @@ export default function FooterMobile() {
                 <a href="https://agenciamonnarka.com.br/" target={`__blank`}>
                   <img className={styled.monnarka_company} src={monnarka} alt="Agencia Marketing Monnarka" />
                 </a>
-                <a href="/" target={`__blank`}>
+                <a href="https://github.com/elielmeschss" target={`__blank`}>
                   <img className={styled.mesch_company} src={mesch} alt="Agencia de Desenvolvimento Digital" />
                 </a>
               </div>
