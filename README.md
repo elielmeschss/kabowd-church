@@ -12,6 +12,8 @@ Members can check the transparency of the treasury, they can also consult projec
 
 For Directors, they can access the transparency of the cashier, can access meetings and internal minutes, manage the front side of the website, access the web radio as well as start programs, can feed the agendas, provide information and create devotionals.
 
+## The App
+
 This application was created to be fed at all times both in administrative and institutional matters and information.
 
 The base of the project was thought to be fast, functional and practical.
