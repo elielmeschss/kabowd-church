@@ -61,7 +61,9 @@ export default function FooterDesktop() {
                 </div>
 
                 <div className={styled.telephone_content_kwd}>
-                  <p>47. 99943 - 2521</p>
+                  <a href="https://api.whatsapp.com/send?phone=5547997735125&text=Ol%C3%A1,%20Gostaria%20de%20informa%C3%A7%C3%B5es">
+                    <p>47. 99773 - 5125</p>
+                  </a>
                 </div>
               </div>
             </div>

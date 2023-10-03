@@ -43,7 +43,7 @@ export default function Contact() {
 
                   <p className={styles.detaislLocale}>
                     <span className={styles.detaisInner}>telefone:</span>
-                    <a className={styles.detailsIn} target="_blank" href="https://api.whatsapp.com/send?phone=5547999432521&text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es!" rel="noreferrer">{`(47) 99943-2521`}</a>
+                    <a className={styles.detailsIn} target="_blank" href="https://api.whatsapp.com/send?phone=5547997735125&text=Ol%C3%A1,%20Gostaria%20de%20informa%C3%A7%C3%B5es" rel="noreferrer">{`(47) 99773-5125`}</a>
                   </p>
 
                   <p className={styles.detaislLocale}>

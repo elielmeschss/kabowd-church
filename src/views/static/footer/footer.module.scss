@@ -105,6 +105,11 @@
                     display: block;
                 }
 
+                a{
+                  text-decoration: unset;
+                  color: #464646;
+                }
+
                 p {
                     font-family: 'Poppins';
                     font-weight: 400;
@@ -208,6 +213,11 @@
                 &::before {
                     content: url(../../../assets/icons/icon-tel.svg);
                     display: block;
+                }
+
+                a{
+                  text-decoration: unset;
+                  color: #464646;
                 }
 
                 p {

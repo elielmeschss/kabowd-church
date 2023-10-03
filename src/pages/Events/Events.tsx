@@ -30,7 +30,7 @@ export default function Events() {
                 img={eventsLink.ester}
                 day="07"
                 month="AGO"
-                active={true}
+                active={false}
                 messageAlert="Inscrições Encerradas"
               />
 
@@ -40,7 +40,7 @@ export default function Events() {
                 img={eventsLink.sacerdotes}
                 day="08"
                 month="AGO"
-                active={true}
+                active={false}
                 messageAlert="Inscrições Encerradas"
               />
 
