@@ -3,9 +3,12 @@ import { IconTrash, IconEdition } from "./icons";
 
 interface TableProps {
   clients: Clients[]
+  selectedClients?: (cliente: Clients) => void
+  removedClients?: (cliente: Clients) => void
 }
 
 export default function Table(props: TableProps) {
+  const showActions = props.removedClients || props.selectedClients
 
   function renderData() {
     return props.clients?.map((cl, i) => {
@@ -21,24 +24,29 @@ export default function Table(props: TableProps) {
   }
 
   function renderAction(clients: Clients) {
-    console.log(clients);
-    
     return (
-      <td>
-        <button className={
-          `flex justify-center items-center 
+      <td className="flex justify-center">
+        {props.selectedClients ? (
+          <button className={
+            `flex justify-center items-center 
           text-green-600 rounded-full hover:bg-purple-50 
-          p-2 m1`
-        }>
-          {IconEdition}
-        </button>
-        <button className={
-          `flex justify-center items-center 
-          text-red-500 rounded-full hover:bg-purple-50 
-          p-2 m1`
-        }>
-          {IconTrash}
-        </button>
+           p-2 m1`
+          } onClick={() => props.selectedClients?.(clients)}>
+            {IconEdition}
+          </button>
+        ) : false}
+
+        {
+          props.removedClients ? (
+            <button className={
+              `flex justify-center items-center 
+              text-red-500 rounded-full hover:bg-purple-50 
+              p-2 m1`
+            } onClick={() => props.removedClients?.(clients)}>
+              {IconTrash}
+            </button>
+          ) : false
+        }
       </td>
     )
   }
@@ -51,7 +59,7 @@ export default function Table(props: TableProps) {
           <th className="text-left p-4">Código</th>
           <th className="text-left p-4">Nome</th>
           <th className="text-left p-4">Idade</th>
-          <th className="p-4">Ações</th>
+          {showActions ? <th className="p-4">Ações</th> : false}
         </tr>
       </thead>
 

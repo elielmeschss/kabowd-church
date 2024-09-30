@@ -4,7 +4,7 @@ export default class Clients {
     #name: string
     #age: number
 
-    constructor(name: string, age: number, id: string = " ' ' "){
+    constructor(name: string, age: number, id: string = null){
         this.#name = name
         this.#age = age
         this.#id = id
