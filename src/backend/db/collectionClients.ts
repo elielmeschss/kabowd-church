@@ -1,9 +1,9 @@
+import { collection, doc, setDoc, addDoc, getDoc, deleteDoc, getDocs, query, DocumentSnapshot, SnapshotOptions, CollectionReference } from 'firebase/firestore';
+import { db } from '../config'; // Supondo que 'db' é a instância do Firestore inicializada em '../config'
 import ClienteRepo from "@/src/core/ClientRepo";
 import Clients from "@/src/core/Clients";
-import firebase from "../config";
 
 export default class CollectionClients implements ClienteRepo {
-
     #conversor = {
         toFirestore(clients: Clients) {
             return {
@@ -11,36 +11,41 @@ export default class CollectionClients implements ClienteRepo {
                 age: clients.age,
             };
         },
-        fromFirestore(snapshot: firebase.firestore.DocumentSnapshot, options: firebase.firestore.SnapshotOptions): Clients {
-            const data = snapshot?.data(options);
+        fromFirestore(snapshot: DocumentSnapshot, options?: SnapshotOptions): Clients {
+            const data = snapshot.data(options);
             return new Clients(data.name, data.age, snapshot.id);
         }
     };
 
     async save(client: Clients): Promise<Clients> {
+        const clientsCollection = collection(db, 'clients').withConverter(this.#conversor);
         if (client?.id) {
-            // Usa o conversor para salvar corretamente
-            await this.collection().doc(client.id).set(client);
+            const clientDocRef = doc(clientsCollection, client.id);
+            await setDoc(clientDocRef, client);
             return client;
         } else {
-            const docRef = await this.collection().add(client);
-            const doc = await docRef.get();
-            // Usa o conversor para recuperar o cliente corretamente
-            return this.#conversor.fromFirestore(doc, {});
+            const docRef = await addDoc(clientsCollection, client);
+            const docSnap = await getDoc(docRef);
+            return this.#conversor.fromFirestore(docSnap);
         }
     }
 
     async delete(client: Clients): Promise<void> {
-        return this.collection().doc(client.id).delete();
+        const clientsCollection = collection(db, 'clients');
+        if (client?.id) {
+            const clientDocRef = doc(clientsCollection, client.id);
+            await deleteDoc(clientDocRef);
+        }
     }
 
     async getAll(): Promise<Clients[]> {
-        const query = await this.collection().get();
-        // Usa o conversor para converter todos os documentos corretamente
-        return query.docs.map(doc => this.#conversor.fromFirestore(doc, {})) ?? [];
+        const clientsCollection = collection(db, 'clients').withConverter(this.#conversor);
+        const q = query(clientsCollection);
+        const querySnapshot = await getDocs(q);
+        return querySnapshot.docs.map(doc => doc.data()) ?? [];
     }
 
-    private collection() {
-        return firebase.firestore().collection('clients').withConverter(this.#conversor);
+    private collection(): CollectionReference<Clients> {
+        return collection(db, 'clients').withConverter(this.#conversor);
     }
 }
